@@ -8,14 +8,22 @@ Dados 2 numeros (limite inferior y superior), recorra el rango e imprima los num
 */
 
 public class rangeSum {   
-
-   public static void main(String[] args) {
-
-		System.out.println("limites: "+args[0]+" "+args[1]);
-
-      
-         System.out.println("numero actual es:" );
-      
-   }
-
-}
+	
+	   public static void main(String[] args) {
+	           int limInferior;
+               int limSuperior;
+            
+        
+        java.util.Scanner x= new java.util.Scanner(System.in);
+        System.out.println("Ingrese el limite inferior");
+        limInferior = x.nextInt();
+        System.out.println("Ingrese el limite superior");
+        limSuperior = x.nextInt();
+        System.out.println(" ");
+        for (int i =limInferior+1; i <limSuperior; i++) {
+            System.out.println(i);
+        }         
+	      
+	   }
+	
+	}

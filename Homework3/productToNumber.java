@@ -13,14 +13,23 @@ mostrar
 */
 
 public class productToNumber {   
-
-   public static void main(String[] args) {
-   		int resultado = 0;
-   		System.out.println(args[0]);
-
-
-   		System.out.println("el producto es: "+resultado);
-      
-   }
-
-}
+	
+	   public static void main(String[] args) {
+	   		    int numero;
+                int resultado=1;
+            
+        
+        java.util.Scanner x= new java.util.Scanner(System.in);
+        System.out.println("Ingrese un numero mayor a cero");
+        numero = x.nextInt();
+        System.out.println(" ");
+        
+        for (int i = 1; i <= numero; i++) {
+           resultado*=i;
+            System.out.print("x"+i);
+       }
+        System.out.print("="+resultado);
+	      
+	   }
+	
+	}

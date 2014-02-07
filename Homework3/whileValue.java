@@ -12,11 +12,14 @@ public class whileValue {
 
    public static void main(String[] args) {
    		int valorActual = 0;
-   		System.out.println(args[0]);
-
-   		//si valor actual < args[0]
-   			System.out.println("el valor actual es: "+valorActual);
-      
+   		
+		java.util.Scanner x= new java.util.Scanner(System.in);
+		System.out.println("Ingrese un numero mayor a cero");
+        valorActual = x.nextInt();
+        System.out.println(" ");        
+        for (int i =0; i <valorActual; i++) {
+            System.out.println("El valor actual es: "+ i);
+        }         
    }
 
 }

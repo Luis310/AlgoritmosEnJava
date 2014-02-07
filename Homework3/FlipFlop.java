@@ -11,23 +11,28 @@ FlipFlop si el numero es divisible dentro de 3 y 5
 y si no cumple ninguna de estas condiciones, solo mostrar el valor de ese numero.
 */
 
-public class FlipFlop {   
+	public class FlipFlop {   
+	
+	   public static void main(String[] args) {
+	   		int numeroActual = 0;
+			
+			java.util.Scanner x= new java.util.Scanner(System.in);
+        System.out.println("Ingrese un numero mayor a cero");
+        numeroActual = x.nextInt();
+        System.out.println(" ");
+        for (int i = 0; i <= numeroActual; i++) {
+            if (i%5==0 & i%3==0) {
+                System.out.print("FlipFlop");
+            }else if (i%3==0) {
+                System.out.print("Flip");
+            }else if (i%5==0) {
+                System.out.print("Flop");
+            }else{
+                System.out.print(i);
+            }
 
-   public static void main(String[] args) {
-   		int numeroActual = 0;
-   		System.out.println(args[0]);
-
-   		// si el numero es divisible dentro de 3 imprima "Flip"
-			System.out.println("Flip");
-
-   		// si el numero es divisible dentro de 5 imprima "Flop"
-			System.out.println("Flop");
-
-   		// si el numero es divisible dentro de 3 y 5 imprima "FlipFlop"
-			System.out.println("FlipFlop");
-
-   		// de lo contrario, imprima el numero
-      		System.out.println(numeroActual);
-   }
-
-}
+	   		
+	   }
+	
+	}
+	}
