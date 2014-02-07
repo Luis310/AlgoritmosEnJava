@@ -8,15 +8,13 @@ Dado un numero 'n' identifique si es par o impar
 
 */
 
-public class oddEven {   
+	public class oddEven {   
 	
 	   public static void main(String[] args) {
 	      int numero= 0;
             
         
-        java.util.Scanner x= new java.util.Scanner(System.in);
-        System.out.println("Ingrese un numero mayor a cero");
-        numero = x.nextInt();
+       numero = Integer.parseInt(args[0].toString());
                 
         if (numero%2==0) {
             System.out.println("El numero es par");
@@ -24,6 +22,6 @@ public class oddEven {
             System.out.println("El numero es impar");
         }
                 }
-	   		
+
 	
 	   }

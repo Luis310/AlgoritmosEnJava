@@ -12,13 +12,10 @@ public class rangeSum {
 	   public static void main(String[] args) {
 	           int limInferior;
                int limSuperior;
-            
+
+        limInferior = Integer.parseInt(args[0].toString());    
+        limSuperior = Integer.parseInt(args[1].toString());
         
-        java.util.Scanner x= new java.util.Scanner(System.in);
-        System.out.println("Ingrese el limite inferior");
-        limInferior = x.nextInt();
-        System.out.println("Ingrese el limite superior");
-        limSuperior = x.nextInt();
         System.out.println(" ");
         for (int i =limInferior+1; i <limSuperior; i++) {
             System.out.println(i);

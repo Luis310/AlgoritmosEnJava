@@ -15,20 +15,21 @@ y si no cumple ninguna de estas condiciones, solo mostrar el valor de ese numero
 	
 	   public static void main(String[] args) {
 	   		int numeroActual = 0;
+			int contador;
 			
-			java.util.Scanner x= new java.util.Scanner(System.in);
-        System.out.println("Ingrese un numero mayor a cero");
-        numeroActual = x.nextInt();
+numeroActual = Integer.parseInt(args[0].toString());
+
+
         System.out.println(" ");
-        for (int i = 0; i <= numeroActual; i++) {
-            if (i%5==0 & i%3==0) {
+        for (contador = 0; contador <= numeroActual; contador++) {
+            if (contador%5==0 & contador%3==0) {
                 System.out.print("FlipFlop");
-            }else if (i%3==0) {
+            }else if (contador%3==0) {
                 System.out.print("Flip");
-            }else if (i%5==0) {
+            }else if (contador%5==0) {
                 System.out.print("Flop");
             }else{
-                System.out.print(i);
+                System.out.print(contador);
             }
 
 	   		

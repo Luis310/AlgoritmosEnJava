@@ -15,20 +15,22 @@ mostrar
 public class productToNumber {   
 	
 	   public static void main(String[] args) {
-	   		    int numero;
-                int resultado=1;
+	        int numero;
+                int respuesta=1;
             
         
-        java.util.Scanner x= new java.util.Scanner(System.in);
-        System.out.println("Ingrese un numero mayor a cero");
-        numero = x.nextInt();
+        numero= Integer.parseInt(args[0].toString());
         System.out.println(" ");
         
         for (int i = 1; i <= numero; i++) {
-           resultado*=i;
-            System.out.print("x"+i);
+          if(numero>i){
+            System.out.print(i+"x");
+           }else{
+           System.out.print(i+"=");
+           }
+           respuesta*=i;
        }
-        System.out.print("="+resultado);
+        System.out.print(respuesta);
 	      
 	   }
 	
